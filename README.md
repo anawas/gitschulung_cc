@@ -20,6 +20,19 @@ Gerrit, Gitolite). Am schnellsten findet man diese per
 `./find-unused.sh` im Verzeichnis `folien/`; eine entsprechende
 Include-Zeile in einer der Session-Datein aktiviert sie.
 
+Hinweise zur Kompilierung
+=========================
+
+Man benötigt eine LaTeX-Version. Zudem mussen die Style-Klassen `pgf` und `beamer` installiert sein.
+Auf Ubuntu hat dazu folgendes geklappt:
+`sudo apt install texlive-science` installiert die Klasse `beamer`
+Die Klasse pgf muss manuel installiert werden. 
+1. Die Datei `pgf_3.0.1.tds.zip`von `https://sourceforge.net/projects/pgf/files/pgf/version%203.0.1/pgf_3.0.1.tds.zip/download` herunterladen.
+2. Im Homeverzeichnis den Ordner `texmf` anlegen
+3. Die Datei `pgf_3.0.1.tds.zip`dort entpacken
+
+Nun kann man wie oben beschrieben mit `make` den Foliensatz erzeugen.
+
 
 Lizenz
 ======
